@@ -8,13 +8,13 @@ pipeline {
        }
      }
        stage('build') {
-     steps(
+          steps{
         sh """
          npm install
          npm start
          """
 
-     )
+          }
        }
 
      }
